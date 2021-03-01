@@ -22,12 +22,20 @@ if __name__ == "__main__":
     # URL of the page to edit
     page = client.get_block(os.getenv('PAGE_URL'))
 
+    # Access a database using the URL of the database page or the inline block
+    cv = client.get_collection_view(
+        "https://www.notion.so/imonsieur/40223918171644b3bdeb7848f61132e6?v=db28b0ff77654e44801debef6938c9fd")
+
+    #row = cv.collection.add_row()
+
     #print("The old title is:", page.title)
 
     #page.title = "Aujourd'hui " + "[" + get_current_date() + "]"
 
     with open("quoti.md", "r", encoding="utf-8") as mdFile:
-        newPage = page.children.add_new(
-            PageBlock, title="Aujourd'hui " + "[" + get_current_date() + "]")
+        row = cv.collection.add_row()
+        row.name = "Aujourd'hui " + "[" + get_current_date() + "]"
+        #newPage = cv.children.add_new(
+        #    PageBlock, title="Aujourd'hui " + "[" + get_current_date() + "]")
         # Appends the converted contents of TestMarkdown.md to newPage
-        upload(mdFile, newPage)
+        upload(mdFile, row)

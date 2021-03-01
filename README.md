@@ -7,4 +7,4 @@ You need to provide token_v2 available in your notion session cookies.
 You'll also need to provide the url of the page you want to modify.
 Follow notion-py documentation for extensive information.
 
-I use Repl.it to run the script online and UptimeRobot to keep it working continuously.
+I use [pythonanywhere](https://www.pythonanywhere.com/) to schedule the daily run of my script
