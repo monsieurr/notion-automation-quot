@@ -1,6 +1,6 @@
 import os
 from os.path import join, dirname
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 from notion.client import NotionClient
 from notion.block import PageBlock
 from md2notion.upload import upload
@@ -13,8 +13,8 @@ def get_current_date():
 
 if __name__ == "__main__":
 
-    dotenv_path = join(dirname(__file__), '.env')
-    load_dotenv(dotenv_path)
+ #   dotenv_path = join(dirname(__file__), '.env')
+ #   load_dotenv(dotenv_path)
     
     # token_v2 value obtained by insepcting the browser's cookies on a logged in session on Notion.so
     client = NotionClient(token_v2 = os.getenv('TOKEN_V2'))
