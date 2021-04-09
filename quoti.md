@@ -1,33 +1,6 @@
-## A faire aujourd'hui
+## Notes du jour
 
-**TODO**
+### Notes de vidéos, articles, podcasts, ...
 
-- [ ]  1
-- [ ]  2
-- [ ]  3
 
-**ROUTINES**
-
-- [ ]  Lecture - ≥ 1 chapitre
-- [ ]  Programmation - ≥ 1 heure
-- [ ]  Sport - ≥ 30 minutes
-
-## Résumé
-
-Aujourd'hui ...
-
-### Trois choses positives
-
-1.
-
-2.
-
-3.
-
-### Priorités pour demain
-
-1.
-
-2.
-
-3.
+### Notes générales/perso/ressenti
